@@ -1,0 +1,21 @@
+@import "config";
+
+
+@include mobile(
+  $name: "hero-mob",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-hp-hero-denim-mob_DNT",
+  $marginBottom: 3.5%
+);
+@include mobile(
+  $name: "prm1-mob",
+  $url:
+    "https://riverisland.scene7.com/is/image/RiverIsland/c20200122-hp-kw-denim-mob_DNT",
+  $marginBottom: 3.5%
+);
+@include image(
+  $name: "hero",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200123-wwlp-hero-new%20arrivals-tops_DNT",
+  $marginBottom: 3.5%
+);
