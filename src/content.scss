@@ -1,4 +1,4 @@
-@import "config";
+@import "./sass/config.scss";
 
 
 @include mobile(
@@ -19,3 +19,10 @@
     "https://images.riverisland.com/is/image/RiverIsland/c20200123-wwlp-hero-new%20arrivals-tops_DNT",
   $marginBottom: 3.5%
 );
+
+
+.promo-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

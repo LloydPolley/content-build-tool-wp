@@ -6,6 +6,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "development",
+   entry: {
+    sassEntry: './src/sass/components/entry.js',
+  },
   module: {
     rules: [
       {
@@ -16,7 +19,7 @@ module.exports = merge(common, {
   },
    plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html"
+      template: "./external/template.html"
     })
   ],
   output: {

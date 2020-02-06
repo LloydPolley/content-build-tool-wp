@@ -1,5 +1,5 @@
 import script from './script.js';
-import '../sass/main.scss';
+import '../content.scss';
 import workspace from  '../workspace.html';
 import header from '../html/header.html';
 import footer from '../html/footer.html';
@@ -7,7 +7,6 @@ import footer from '../html/footer.html';
 //COUNTRY SELECT
 const targetRegion = document.querySelector('#region-target');
 targetRegion.classList.add('region-UK');
-
 
 
 //HTML PARTIALS ENTRY POINT

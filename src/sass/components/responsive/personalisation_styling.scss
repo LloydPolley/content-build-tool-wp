@@ -1,0 +1,421 @@
+/* fix for mobile info strip causing PLP problems */
+
+.mobile-info-strip {
+    overflow: hidden;
+}
+
+
+/*cross-sell*/
+.Product_product__1eSKN .ProductTitle_product-title__3Hwcd:after {
+    background: linear-gradient(90deg,rgba(255,255,2555,0),#fff);
+}
+button:hover.WishListButton_wishListButton__2deLA {
+        background-color: #fff !important;
+        color: #000 !important;
+}
+
+.gallery .slick-dots{
+    bottom: 24px;
+}
+
+.mega-menu__column{
+   padding: 0;
+}
+
+/*show hide Curalate on blog*/
+#inspiration .curalate-mobile {
+        display:none;
+    }
+
+@media (max-width: 700px) {
+    #inspiration .curalate-widget {
+        display:none;
+    }
+    #inspiration .curalate-mobile {
+        display:block;
+    }
+}
+
+
+.product-information{
+    padding: 0;
+}
+@media only screen and (max-width: 768px) {
+    .product-information{
+        padding: 16px;
+    }
+}
+
+/* CSS required for contact us section for CS */
+table.contact-amended {
+    border-collapse: inherit;
+    border-spacing: 7px;
+}
+table.contact-amended td {
+	vertical-align: top;
+}
+
+/*FIX - YMAL without wear it with fails to display (16/01/19)*/
+.cross-sell__container.ymal #you-may-also-like{
+   display:block;
+}
+
+/*capitalise blog header until CMS is updated to allow editing of this page*/
+
+#inspiration .inspiration-content-wrap .blog-header h1 {
+    text-transform: uppercase;
+}
+
+/*HIDE TOKY WOKY IN FAQ*/
+
+#zoom-win .faq-content div.grid.gutter-3 > div:nth-child(8) {
+    display: none;
+}
+
+/* Fix mobile footer layout for FR only */
+
+@media only screen and (max-width: 700px) {
+    .region-FR .checkbox--container {
+        width: 323px !important;
+    }
+    .region-FR .checkbox--mod {
+        width: 100px !important;
+    }
+}
+
+/* Fix search placeholder for FR/NL */
+
+/*.region-FR .overlay--search .typeahead-search__input::-webkit-input-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-FR .overlay--search .typeahead-search__input:-moz-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-FR .overlay--search .typeahead-search__input::-moz-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-FR .overlay--search .typeahead-search__input:-ms-input-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-NL .overlay--search .typeahead-search__input::-webkit-input-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-NL .overlay--search .typeahead-search__input:-moz-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-NL .overlay--search .typeahead-search__input::-moz-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*.region-NL .overlay--search .typeahead-search__input:-ms-input-placeholder {*/
+/*    font-size: 36px;*/
+/*}*/
+
+/*@media only screen and (max-width: 768px) {*/
+/*    .region-FR .overlay--search .typeahead-search__input::-webkit-input-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-FR .overlay--search .typeahead-search__input:-moz-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-FR .overlay--search .typeahead-search__input::-moz-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-FR .overlay--search .typeahead-search__input:-ms-input-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-NL .overlay--search .typeahead-search__input::-webkit-input-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-NL .overlay--search .typeahead-search__input:-moz-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-NL .overlay--search .typeahead-search__input::-moz-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .region-NL .overlay--search .typeahead-search__input:-ms-input-placeholder {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*}*/
+
+/* Fix double scroll bar issue because of FR pixel */
+
+.region-FR div.zx_mediaslot {
+    overflow: hidden;
+}
+
+
+/* Temporarily hide google reviews panel until WR24 is released */
+
+div#___ratingbadge_0,
+div#___ratingbadge_1 {
+    display: none !important;
+}
+
+/*hide zoom message on mobile*/
+
+.zoomTrigger {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    /*remove lists from LPs on mob*/
+    .shopping-catalogue-guide {
+        display: none;
+    }
+}
+
+/*blog background fix*/
+
+.site-container {
+    background-size: cover;
+}
+
+/*recently view stop background coming through awkwardly*/
+
+.recently-viewed {
+    background-color: white;
+}
+
+/*cut margin before title on blog post*/
+
+@media only screen and (max-width: 43.75em) {
+    #inspiration.inspiration-post {
+        margin-top: 20px;
+    }
+}
+
+/* temp hiding of wishlist popup */
+
+#wishNotification {
+    display: none !important;
+}
+
+/* reduce size of products box by 2px in PLP */
+
+.primary-right .products-listing>li {
+    margin-left: 8px !important;
+}
+
+@media only screen and (max-width: 700px) {
+    .primary-right .products-listing li {
+        margin-left: initial !important;
+    }
+}
+
+.ui-btn-alt-2 {
+    border: 0;
+}
+
+/* fix for PLP mobile bug where only one item was showing per row going live 06/09/17 */
+
+@media only screen and (max-width: 700px) {
+    .primary-right .products-listing {
+        margin-top: 25px !important;
+    }
+}
+
+/* fix for sale colour not working in quickbuy - now fixed in core */
+
+.sale.ui-headline {
+    color: #ff586d !important;
+}
+
+.price .sale,
+.details .sale {
+    text-transform: none !important;
+    color: #ff586d !important;
+}
+
+/* emergency fix to get prices to fit on sale with too long product names */
+
+.products-listing .name-price-container .price {
+    margin-top: 0;
+}
+
+/* Footer fix */
+
+.ri-responsive-accordion span.icon-plus-circle,
+.ri-responsive-accordion span.icon-minus-circle {
+    pointer-events: none;
+}
+
+/* fix the Sale font color back to red */
+
+.price .sale {
+    text-transform: none !important;
+    color: #ff586d !important;
+}
+
+#faq-container {
+    max-width: none;
+}
+
+/*style insider fixes*/
+
+@media only screen and (max-width: 43.75em) {
+    #inspiration.inspiration-home .inspiration-content-wrap .blog-header h1 span {
+        text-decoration: none;
+        font-weight: 600;
+    }
+    #inspiration .inspiration-content-wrap .blog-header h1 span,
+    #inspiration .inspiration-content-wrap .blog-header h3 span {
+        background: none;
+        color: black;
+    }
+    /*#inspiration .inspiration-content-wrap .blog-header button {
+        background: none;
+        color: black;
+    }*/
+}
+
+#inspiration .inspiration-content-wrap .blog-posts .row a.blog-post picture img {
+    max-width: 100%;
+}
+
+/* Quickfix to reset width of email input box in footer */
+
+@media only screen and (min-width: 43.8125em) {
+    fieldset input[type="email"] {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+/* Quickfix to correct wrong font loading into newsletter modal on HP */
+
+#newsletter-signup-modal-wrapper [class^="icon-"]
+/*, [class*=" icon-"]*/
+
+    {
+    font-family: inherit !important;
+}
+
+@media (max-width: 700px) {
+    #preview-toolbar {
+        transform: translate(0px, 100%);
+    }
+}
+
+/* Fix for content spots mobile 23/02/17 */
+
+@media only screen and (max-width: 700px) {
+    .content-hotspot {
+        margin-bottom: calc(50% + 8.125em - 93%);
+    }
+}
+
+.newsletter-modal__window>img {
+    display: none;
+}
+
+.content-wrap>.banner-top {
+    width: 166.66%;
+    margin-left: -33.33%;
+}
+
+/* Red font not working in mobile fix */
+
+#my-menu .megamenu-red,
+#my-menu .megamenu-red h2 {
+    color: red !important;
+}
+
+/* Z-index bug on PDP, can't select colour swatches */
+
+.product-details-container .right-side {
+    z-index: 1;
+}
+
+/*box sizing on content-wrap was meaning the max display width was the smaller than intended - leading to blurry images on full width*/
+
+.content-wrap {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+#cookie-notifcation-banner {
+    z-index: 500;
+}
+
+/*PDP DELIVERY/RETURNS BULLETS*/
+
+#delivery-content ul li:before {
+    content: "• ";
+}
+
+.si-wrapper .top-banner {
+    display: none;
+}
+
+.region-UK .si-wrapper .top-banner {
+    display: block;
+}
+
+.sidebar-left .icon::before {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+/*17-3-16 fixing problem where size guide link was only working from half way down*/
+
+.product-details-container .small-hide {
+    margin-bottom: 0.25em;
+}
+
+.product-details-container .size-guide {
+    margin-top: 0;
+}
+
+.product-details-container .few-left-in-stock {
+    margin-top: 2px;
+}
+
+@media only screen and (min-width: 1220px) {
+    #category-header p {
+        font-size: 14px;
+    }
+}
+
+/*7-1-16*/
+
+@media only screen and (max-width: 700px) {
+    .primary-right .glass {
+        z-index: 2;
+    }
+    .breadcrumbs {
+        display: none;
+    }
+}
+
+.cloudzoom-zoom {
+    z-index: 1;
+}
+
+.no-breadcrumbs {
+    display: none;
+}
+
+@media only screen and (max-width: 976px) {
+    .info-strip-container {
+        margin-top: 0;
+    }
+}
+
+#category-header p {
+    white-space: normal;
+}
+
+/*style insider icon position override*/
+
+.icon {
+    left: 0;
+}

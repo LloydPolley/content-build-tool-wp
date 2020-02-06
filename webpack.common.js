@@ -5,7 +5,6 @@ module.exports = {
   entry: {
     main: "./src/js/index.js",
     script: './src/js/script.js',
-    sassEntry: './src/sass/entry.js',
   },
   module: {
     rules: [
@@ -13,10 +12,10 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader"
       },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      }
+      // {
+      //   test: /\.css$/,
+      //   use: ["style-loader", "css-loader"]
+      // }
     ]
   },
 };

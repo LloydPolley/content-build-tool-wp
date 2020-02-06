@@ -1,0 +1,72 @@
+@import 'config';
+
+.forget-someone {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 1em 0;
+
+    h1 {
+        font-size: 24px;
+        color: black;
+        font-weight: 500;
+    }
+}
+
+.forget-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 99vw;
+    margin: 0 auto;
+
+    &__box {
+        text-align: center;
+        width: 33%;
+
+        .image {
+            padding-bottom: 88%;
+            margin: 4% 0 3%;
+        }
+    }
+}
+
+@media(min-width: 701px){
+    .forget-someone {
+        padding: 1.5em;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
+
+
+
+//Images
+
+$flushVariable: 'flush1';
+
+@media(max-width: 701px) {
+    @include mobile($name: 'forget-women',
+        $flush: $flushVariable,
+        $url: 'https://images.riverisland.com/is/image/RiverIsland/c20191224-wwlp-forgetting-someone-mens-mob_DNT');
+    @include mobile($name: 'forget-men',
+        $flush: $flushVariable,
+        $url: 'https://images.riverisland.com/is/image/RiverIsland/c20191224-wwlp-forgetting-someone-mens-mob_DNT');
+    @include mobile($name: 'forget-girls',
+        $flush: $flushVariable,
+        $url: 'https://images.riverisland.com/is/image/RiverIsland/c20191224-wwlp-forgetting-someone-mens-mob_DNT');
+
+}
+
+@media(min-width: 701px) {
+    @include image($name: 'forget-women',
+        $flush: $flushVariable,
+        $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200102-wwlp-forgetting-someone-mens_DNT');
+    @include image($name: 'forget-men',
+        $flush: $flushVariable,
+        $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200102-wwlp-forgetting-someone-mens_DNT');
+    @include image($name: 'forget-girls',
+        $flush: $flushVariable,
+        $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200102-wwlp-forgetting-someone-mens_DNT');
+}

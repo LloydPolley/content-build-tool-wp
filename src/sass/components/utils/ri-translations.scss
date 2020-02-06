@@ -1,0 +1,47 @@
+.nl-block,
+.fr-block,
+.de-block,
+.nl-inline-block,
+.fr-inline-block,
+.de-inline-block,
+.nl-inline,
+.fr-inline,
+.de-inline {
+    display: none;
+}
+
+.region-DE [de] .en-inline,
+.region-FR [fr] .en-inline,
+.region-NL [nl] .en-inline {
+    display: none;
+}
+
+.region-NL .nl-inline,
+.region-FR .fr-inline,
+.region-DE .de-inline {
+    display: inline;
+}
+
+.region-NL .nl-inline-block,
+.region-FR .fr-inline-block,
+.region-DE .de-inline-block,
+.region-UK .en-inline-block,
+.region-SE .en-inline-block,
+.region-AU .en-inline-block,
+.region-EU .en-inline-block,
+.region-IE .en-inline-block,
+.region-US .en-inline-block{
+    display: inline-block;
+}
+
+.region-NL .nl-block,
+.region-FR .fr-block,
+.region-DE .de-block,
+.region-UK .en-block,
+.region-SE .en-block,
+.region-AU .en-block,
+.region-EU .en-block,
+.region-IE .en-block,
+.region-US .en-block {
+    display: block;
+}
