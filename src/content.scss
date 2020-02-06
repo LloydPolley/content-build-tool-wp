@@ -1,28 +1,151 @@
-@import "./sass/config.scss";
+@import "./config/config.scss";
+
+$flushVariable: "flush1";
+$marginBottomVar: 3.5%;
+$marginTopVar: 3.5%;
 
 
+
+// *** MOBILE ***
 @include mobile(
   $name: "hero-mob",
   $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-hp-hero-denim-mob_DNT",
-  $marginBottom: 3.5%
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-hero-1-mob",
+  $flush: $flushVariable
 );
 @include mobile(
   $name: "prm1-mob",
   $url:
-    "https://riverisland.scene7.com/is/image/RiverIsland/c20200122-hp-kw-denim-mob_DNT",
-  $marginBottom: 3.5%
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo1-mob",
+  $flush: $flushVariable
 );
+@include mobile(
+  $name: "prm2-mob",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo2-mob",
+  $flush: $flushVariable
+);
+@include mobile(
+  $name: "prm3-mob",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-hero4-DENIM-mob-DNT",
+  $flush: $flushVariable
+);
+
+
+.hero-mob{
+  background-position: 100% !important;
+}
+
+.prm1-mob{
+  background-position: 3% !important;
+
+  .promo-content{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    text-align: left;
+    h1{
+      text-align: left;
+    }
+  }
+}
+
+.prm2-mob{
+  background-position: 95% !important;
+}
+
+//DESKTOP
 @include image(
   $name: "hero",
   $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200123-wwlp-hero-new%20arrivals-tops_DNT",
-  $marginBottom: 3.5%
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo1",
+  $flush: $flushVariable,
+  $marginBottom: $marginBottomVar,
+  $marginTop: 6%
+);
+@include image(
+  $name: "prm1",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo2",
+  $flush: $flushVariable,
+  $marginBottom: $marginBottomVar
+);
+@include image(
+  $name: "prm2",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo3",
+  $flush: $flushVariable,
+  $marginBottom: 7%
+);
+@include image(
+  $name: "prm3",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-hero4-DENIM_DNT",
+  $flush: $flushVariable
 );
 
 
-.promo-content{
-  position: absolute;
-  left: 50%;
-  top: 50%;
+@media (min-width: 701px) {
+  .promo-content {
+    position: absolute;
+  }
+}
+
+.hero {
+  background-position: 29% !important;
+
+  svg {
+    position: absolute;
+    left: 36%;
+    top: 16%;
+  }
+}
+
+.fast-track-section {
+  max-width: 1200px;
+  width: 98vw;
+  margin: 0 auto;
+
+  .fast-track-box {
+    margin-bottom: 2%;
+  }
+}
+
+.prm1 {
+  background-position: 36% !important;
+
+  svg {
+    position: absolute;
+    right: 20%;
+  }
+}
+.prm2 {
+  background-position: 30% !important;
+
+  .promo-content {
+    left: 39%;
+    top: 12%;
+  }
+}
+.prm3{
+  margin-bottom: 3.5%;
+  background-color: white;
+}
+
+.prm-fixed {
+  img{
+    position: fixed;
+    right: 37%;
+    transform: translatex(50%);
+    top: 6%;
+    opacity: 0;
+  }
+  .currentImg{
+    opacity: 1;
+  }
+}
+
+footer{
+  background-color: white;
 }

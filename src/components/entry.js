@@ -4,11 +4,11 @@
 
 // //CSS - REGULAR CSS
 import './responsive/dm-translations.scss';
-import './landing-pages/sale-banner.scss';
-import './landing-pages/fast-track-desktop.scss';
-import './landing-pages/fast-track-mob.scss';
-import './landing-pages/puns.scss';
-// import './landing-pages/forget-someone.scss';
+import './landing-pages/sale-banner/sale-banner.scss';
+import './landing-pages/fast-track/fast-track-desktop.scss';
+import './landing-pages/fast-track/fast-track-mob.scss';
+import './landing-pages/puns/puns.scss';
+// import './landing-pages/forgetting-someone/forget-someone.scss';
 
 
 //CORE FOLDER
@@ -25,3 +25,4 @@ import './responsive/personalisation_styling.scss';
 import './responsive/slick-carousel.scss';
 import './responsive/temp-core-fix.scss';
 
+//JS

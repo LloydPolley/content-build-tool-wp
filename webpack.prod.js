@@ -23,7 +23,7 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new HtmlWebpackPlugin({
-        template: "./src/template.html",
+        template: "./external/template.html",
         minify: {
           removeAttributesQuotes: true,
           collapseWhitespace: true,

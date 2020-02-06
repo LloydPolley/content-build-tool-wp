@@ -1,13 +1,11 @@
-import script from './script.js';
 import '../content.scss';
 import workspace from  '../workspace.html';
-import header from '../html/header.html';
-import footer from '../html/footer.html';
+import header from '../../external/html/header.html';
+import footer from '../../external/html/footer.html';
 
 //COUNTRY SELECT
 const targetRegion = document.querySelector('#region-target');
 targetRegion.classList.add('region-UK');
-
 
 //HTML PARTIALS ENTRY POINT
 //Workspace import for blank html file
