@@ -1,6 +1,6 @@
 @import "./config/config.scss";
 
-$flushVariable: "flush1";
+$flushVariable: "flush3";
 $marginBottomVar: 3.5%;
 $marginTopVar: 3.5%;
 
@@ -62,7 +62,7 @@ $marginTopVar: 3.5%;
     "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo1",
   $flush: $flushVariable,
   $marginBottom: $marginBottomVar,
-  $marginTop: 6%
+  $marginTop: 11.5%
 );
 @include image(
   $name: "prm1",
@@ -138,7 +138,7 @@ $marginTopVar: 3.5%;
     position: fixed;
     right: 37%;
     transform: translatex(50%);
-    top: 6%;
+    top: 0%;
     opacity: 0;
   }
   .currentImg{
