@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-
 module.exports = merge(common, {
   mode: "production",
   output: {
@@ -16,7 +15,22 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader", "postcss-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+          "postcss-loader"
+        ]
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
       }
     ]
   },
@@ -32,5 +46,8 @@ module.exports = merge(common, {
       })
     ]
   },
-  plugins: [new MiniCssExtractPlugin({filename: "[name].css"}), new CleanWebpackPlugin()]
+  plugins: [
+    new MiniCssExtractPlugin({ filename: "[name].css" }),
+    new CleanWebpackPlugin()
+  ]
 });
