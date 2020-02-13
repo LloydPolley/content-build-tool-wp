@@ -1,374 +1,679 @@
-@import "./config/config.scss";
+@import './config/config.scss';
 
-$flushVariable: "flush1";
-$marginBottomVar: 3.5%;
-$marginTopVar: 3.5%;
+$flush-var: 'gh';
 
+// MOBILE
 
-@media(max-width: 701px){
-  #inner-container{
-    overflow: unset;
-  }
-  #outer-container{
-    overflow: unset;
-  }
-}
+//STICKY - Find your fit selection
+@include mobile($name: 'link1', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20MOLLY_DNT', $flush: $flush-var);
+@include mobile($name: 'link2', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20AMELIE_DNT', $flush: $flush-var);
+@include mobile($name: 'link3', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20HAILEY_DNT', $flush: $flush-var);
+@include mobile($name: 'link4', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20CARRIE_DNT', $flush: $flush-var);
+@include mobile($name: 'link5', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20BLAIR_DNT', $flush: $flush-var);
 
+@include mobile($name: 'link6', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20BROOKE_DNT', $flush: $flush-var);
 
-// *** MOBILE ***
-// @include mobile(
-//   $name: "hero-mob",
-//   $url:
-//     "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-hero-1-mob",
-//   $flush: $flushVariable
-// );
-@include mobile(
-  $name: "prm1-mob",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo1-mob",
-  $flush: $flushVariable
-);
-@include mobile(
-  $name: "prm2-mob",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo2-mob",
-  $flush: $flushVariable,
-  $marginBottom: 10%
-);
-@include mobile(
-  $name: "prm3-mob",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-hero4-DENIM-mob-DNT",
-  $flush: $flushVariable
-);
+@include mobile($name: 'link7', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20KAIA_DNT', $flush: $flush-var);
 
+@include mobile($name: 'link8', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_mob_%20bootcut_DNT', $flush: $flush-var);
 
-.block-anchor{
-  display: block;
-  height: 125vw;
-  margin-top: -129%;
-}
+// Sliding Hero
+@include mobile($name: 'sliding', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200129-WWCLP-DENIM_hero-mob_DNT', $flush: $flush-var);
 
-.hero-mob{
-  background-position: 100% !important;
-  padding-bottom: 129%;
-  position: sticky !important;
-  top: 5%;
-  z-index: -1;
-  transition: 1s ease all;
+@include mobile($name: 'prm1-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO1_%20MOLLY_shop%20molly_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
 
-  img{
-    position: absolute;
-    right: 0;
-    transition: 1s ease all;
-    opacity: 0;
-    width: 80vw;
-    &.current-image{
-      opacity: 1;
-    }
-  }
-}
-.img-container-fixed{
-  transition: 1s ease all;
-}
-.svg-container-mob{
-  bottom: 15%;
-  width: 85vw;
-  margin-left: 10%;
-  margin-bottom: 8%;
-  z-index: 3;
+// GIF incase of future updates...
+// @include mobile($name: 'prm1-mob-gif-1', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20190822_WW_Promo1_Molly_gif_Frame1_MOB_DNT', $flush: 'gh');
 
-  &.hero-svg{
-    margin-top: -61%;
-    pointer-events: none;
-  }
+@include mobile($name: 'prm2-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO2_%20AMELIE_shop%20amelie_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
 
-  svg{
-    z-index: 2;
+@include mobile($name: 'prm3-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO3_%20HAILEY_shop%20hailey_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
+
+@include mobile($name: 'prm4-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO4_%20CARRIE_shop%20carrie_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
+
+@include mobile($name: 'prm5-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO5_%20BLAIR_shop%20blair_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
+
+@include mobile($name: 'prm6-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO6_%20BROOKE_shop%20brooke_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
+
+@include mobile($name: 'prm7-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO7_%20KAIA_shop%20kaia_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
+
+@include mobile($name: 'prm8-mob', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO8_%20BOOCUT_shop%20bootcut_mob_DNT', $marginBottom: 3%, $flush: $flush-var);
+
+.hero-mob-video {
+  position: relative;
+  .video-mob {
+    width: 100%;
   }
 }
 
-.cta-wrap{
-  text-align: center;
-  margin-bottom: 15%;
-}
-.promo-content{
+.lp-video{
+  // height: 100%;
   z-index: 2;
-  .titles{
-    font-weight: 500;
-    color: black;
-    font-size: 9vw;
-  }
-  .ctas-cont{
-    margin-top: 10%;
-  }
 }
-.prm1-mob{
-  background-position: 0% !important;
-
-  .promo-content{
-    position: absolute;
-    left: 50%;
-    top: 32%;
-    text-align: left;
-    img{
-      width: 40vw;
-    }
-    h1{
-      text-align: left;
-    }
-  }
-}
-.prm2-mob{
-  background-position: 100% !important;
-
-  .promo-content{
-    position: absolute;
-    left: 12%;
-    top: 7%;
-    text-align: left;
-    img{
-      width: 40vw;
-    }
-    h1{
-      text-align: left;
-    }
-  }
-}
-
-
-
-//DESKTOP
-@include image(
-  $name: "hero",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo1",
-  $flush: $flushVariable,
-  $marginBottom: $marginBottomVar,
-  $marginTop: 6%
-);
-@include image(
-  $name: "prm1",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo2",
-  $flush: $flushVariable,
-  $marginBottom: $marginBottomVar
-);
-@include image(
-  $name: "prm2",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-promo3",
-  $flush: $flushVariable,
-  $marginBottom: 7%
-);
-@include image(
-  $name: "prm3",
-  $url:
-    "https://images.riverisland.com/is/image/RiverIsland/c20200203-wwlp-hero4-DENIM_DNT",
-  $flush: $flushVariable
-);
-.whole-page{
-}
-.page-anchors{
+.tap-container{
   position: absolute;
-  width: 57%;
-  top: 1%;
-  left: 43%;
-  z-index: 2;
-  height: 59%;
-  display: none;
+  top: 85%;
+  text-align: center;
+  pointer-events: none;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 
-  &__current{
-    display: block;
+.tap-container p {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 700;
+  color: white;
+  span {
+    animation: flash 1s linear infinite;
   }
+}
+
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Sliding hero
+.hero-mob {
+  padding-bottom: 73%;
+}
+// mobile paddigng for promos
+.mob-padd {
+  padding-bottom: 87.323%!important;
+}
+
+// Sliding
+.sliding-container {
+  width: 100%;
+  overflow: scroll;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+    background-color: transparent;
+  }
+  & ::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  &::-webkit-scrollbar {
+    background-color: white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.sliding {
+  width: 349%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+// Sliding - end
+
+.promo-headers-mob {
+  width: 92%;
+  margin: 0 auto;
+  .desc {
+    color: #a1a2a4;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 5vw;
+  }
+  .name {
+    color: #1F4A6C;
+    display: inline-block;
+    font-size: 9vw;
+    font-weight: 700;
+  }
+  .price-red {
+    font-size: 5vw;
+    // color: #CF3239;
+    color: #1F4A6C;
+    font-weight: 500;
+    display: inline-block;
+    float: right;
+    margin-top: 4%;
+  }
+}
+
+.box-text-mob {
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  h3 {
+    color: #dec0ac;
+    font-weight: 700;
+    font-size: 6vw;
+
+  }
+}
+
+.hero-slide-text {
+  position: absolute;
+  height: 95%;
+  width: 11.7%;
+  text-align: left;
+  top: 3%;
+
+  .inner-mob-hero-text {
+    position: absolute;
+    width: 100%;
+    top: 67%;
+    left: 2%;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: #1F4A6C;
+    margin-top: 3%;
+    font-size: 8.5vw;
+  }
+
+  p {
+    margin: 0 .3em !important;
+    color: white;
+    font-weight: 500;
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 700px) {
+
+  // Removing padding
+  #outer-container #inner-container .full-page {
+    padding: 0 !important;
+  }
+
+  .content-wrap {
+    padding: 0 !important;
+  }
+
+  .image {
+    background-size: auto 100%;
+  }
+
+  @media screen and (-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+    .slider-label input[type=range] {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+
+  .sticky-menu {
+    width: 100%;
+    top: -40%;
+    padding-top: 2em;
+    background-color: #fff;
+    transition: all 1s ease;
+  }
+  .show-sticky {
+    top: 0%;
+  }
+  .sticky-font {
+    text-align: left;
+    color: #1F4A6C;
+    padding: 2%;
+    font-size: .9em;
+  }
+
+  .shortcut-overflow {
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .shortcut-container {
+      display: flex;
+      width: 190%;
+
+      .shortcut-slide {
+        // text-align: center;
+        margin: 0 auto;
+        width: 20%;
+
+        .image {
+          padding-bottom: 136%;
+        }
+      }
+    }
+  }
+
+  .gif-mob {
+    position: absolute;
+    top: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    width: 103.5%;
+    left: -2%;
+  }
+
+  // Read more functionality Mobile
+  .read-more-target {
+    transition: max-height 0.4s ease-out;
+    overflow: hidden;
+    height: auto;
+    max-height: 17vw;
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+
+  .read-more-state:checked~.read-more-wrap .read-more-target {
+    height: auto;
+    max-height: 350px;
+  }
+
+  .read-more-trigger {
+    margin-bottom: 4%;
+    margin-top: 1%;;
+    font-size: 4vw;
+  }
+
+  .font-sizing {
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+}
+
+////DESKTOP SECTION
+@include image($name: 'slider-image', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_Anchor_Banner_Perfect_Fit_DNT', $flush: $flush-var);
+
+@include image($name: 'hero', $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124-WWCLP-DENIM_hero-MOLLY_DNT', $marginBottom: 2%, $flush: $flush-var);
+
+@include image($name: 'prm1',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO1_%20MOLLY_shop%20molly_DNT',
+$marginTop: 2%, $flush: $flush-var);
+
+// Gif incase future...
+// @include image($name: 'prm1-gif-1',
+// $url: 'https://images.riverisland.com/is/image/RiverIsland/c20190822_WW_Promo1_Molly_gif__Frame1_DNT', $flush: $flush-var);
+
+@include image($name: 'prm2',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO2_%20AMELIE_shop%20amelie_DNT', $marginTop: 4%, $flush: $flush-var);
+
+@include image($name: 'prm3',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO3_%20HAILEY_shop%20hailey_DNT', $marginTop: 4%, $flush: $flush-var);
+@include image($name: 'prm4',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO4_%20CARRIE_shop%20carrie_DNT', $marginTop: 4%, $flush: $flush-var);
+@include image($name: 'prm5',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO5_%20BLAIR_shop%20blair_DNT', $marginTop: 4%, $flush: $flush-var);
+@include image($name: 'prm6',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO6_%20BROOKE_shop%20brooke_DNT', $marginTop: 4%, $flush: $flush-var);
+@include image($name: 'prm7',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO7_%20KAIA_shop%20kaia_DNT', $marginTop: 4%, $flush: $flush-var);
+@include image($name: 'prm8',
+$url: 'https://images.riverisland.com/is/image/RiverIsland/c20200124_WW%20CLP_Denim_PROMO8_%20BOOCUT_shop%20bootcut_DNT', $marginTop: 4%, $flush: $flush-var);
+
+// Read more functionality Desktop?
+.read-more-target {
+  transition: max-height 0.4s ease-out;
+  overflow: hidden;
+  height: auto;
+  max-height: 7vw;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+  height: auto;
+  max-height: 350px;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  content: 'Read more';
+  display: block;
+  margin-bottom: 2%;
+  color: #666;
+}
+
+input[type='checkbox']~label:not(.label-like):before {
+  display: none;
+}
+
+.read-more-state~.read-more-trigger::after {
+  content: 'Read more';
+  padding-bottom: 0.5%;
+  border-bottom: 2px solid #666;
+}
+
+.read-more-state:checked~.read-more-trigger::after {
+  content: 'Read less';
+  padding-bottom: 0.5%;
+  border-bottom: 2px solid #666;
+  // content: '';
+}
+
+.box-anchor {
+  top: 3.9%;
+  height: 47%;
+  width: 8.1%;
+  position: absolute;
+  text-align: left;
+  
+
+  a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #1F4A6C;
+    z-index: 3;
+  }
+
+  .jean-title-box {
+    position: absolute;
+    width: 100%;
+    top: 85.5%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+    p {
+      margin: 0;
+      margin-bottom: 3%;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.4vw;
+      line-height: 1.1;
+    }
+
+    h5 {
+      font-weight: 700;
+      padding-bottom: 6%;
+      color: #1F4A6C;
+      font-size: 2vw;
+      line-height: 1.2;
+    }
+  }
+}
+
+
+.gif-desk {
+  position: absolute;
+  top: 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  width: 20%;
+}
+
+.box-text-desktop {
+  position: absolute;
+  top: 3%;
+  width: 23%;
+  height: 97%;
+  margin: 0 1em;
+}
+
+.desc {
+  color: #a1a2a4;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 1.6vw;
+}
+.name {
+  color: #1F4A6C;
+  line-height: 1.4;
+  font-size: 3vw;
+  font-weight: 700;
+  display: block;
+  text-align: left;
+}
+.price-red {
+  // color: #CF3239;
+  color: #1F4A6C;
+  line-height: 1.4;
+  font-weight: 500;
+  display: block;
+  font-size: 1.6vw;
+  float: none;
+}
+
+.subtitle {
+  color: #dec0ac;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 2vw;
 }
 
 @media (min-width: 701px) {
-  .promo-content {
-    position: absolute;
-  }
+  .read-more-target { font-size: 1.6vw;}
+
 }
 
-.hero {
-  background-position: 29% !important;
-  overflow: visible !important;
+@media (min-width: 940px) {
+  .read-more-target{
+    font-size: 1em;
+  } 
+}
 
-  .promo-content{
-    position: absolute;
-    left: 21%;
-    top: 34%;
-    div{
-      margin-bottom: 10%;
+
+@media (min-width: 1200px) {
+  .box-anchor {
+    .jean-title-box {
+      p {
+        font-size: 1em;
+      }
+      h5 {
+        font-size: 1.6em;
+      }
+    }
+  }
+  
+  .box-text-desktop {
+    .desc {
+      font-size: 18px;
+    }
+    .name {
+      font-size: 38px;
+    }
+    .price-red {
+      font-size: 18px;
+    }
+    .subtitle {
+      font-size: 26px;
     }
   }
 
-  svg {
-    position: absolute;
-    left: 36%;
-    top: 20%;
-    width: 40vw;
+  .read-more-target {
+    max-height: 81px;
   }
 }
 
-.fast-track-section {
-  max-width: 1190px;
-  width: 96vw;
-  margin: 0 auto;
-
-  .fast-track-box {
-    margin-bottom: 2%;
-  }
-}
-
-.prm1 {
-  background-position: 33% !important;
-  margin-top: -2%;
-  overflow: visible !important;
-  margin-top: 18%;
-
-
-  .prm-fast-track{
-    position: absolute;
-    left: 20%;
-    top: -62%;
-
-  }
-
-  .promo-content{
-    position: absolute;
-    left: 39%;
-    top: 38%;
-  }
-
-  &__png{
-    position: absolute;
-    left: 22%;
-    bottom: 0;
-    width: 5vw;
-  }
-
-  svg {
-    position: absolute;
-    right: 20%;
-    width: 47vw;
-    top: 20%;
-  }
-}
-.prm2 {
-  background-position: 25% !important;
-
-  &__png{
-    position: absolute;
-    left: 41%;
-    bottom: 0;
-    width: 5vw;
-  }
-
-  .promo-content {
-    left: 21%;
-    top: 18%;
-  }
-}
-.prm3{
-  // margin-bottom: 3.5%;
-  background-color: white;
-  .promo-content{
-    position: absolute;
-    left: 27%;
-    width: 10%;
-    top: 55%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    div{
-      margin-bottom: 10%;
-    }
-
-    a{
-      color: #153754;
-    }
-    .fast-track__white:before{
-      background: #153754;
-    }
-  }
-}
-
-
-.prm-fixed {
-  transition: 1s ease all;
-  position: fixed;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 100vw;
+.sticky-menu {
   max-width: 1200px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  top: -30%;
+  transition: all 1s ease;
+  padding-top: 1%;
+  background-color: #fff;
+}
 
-  &__element{
-    a{
-      position: absolute;
-      left: 30%;
-      height: 61.5vw;
-      width: 70%;
-    }
-  }
-  img{
+.slider-image {
+  overflow: hidden;
+  padding-bottom: 8.2%!important;
+  display: flex;
+}
+
+.find-your-fit-banner {
+  width: 11.9%;
+  position: relative;
+  padding-bottom: 8%;
+  margin: 0 .29%;
+
+  a{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    transition: 1s ease all;
-    width: 84vw;
-    margin-left: 16.1%;
-
-    &:nth-child(2){
-      opacity: 0;
-    }
-    &:nth-child(3){
-      opacity: 0;
-    }
+    z-index: 4;
   }
 
+  p {
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-weight: 700;
+    margin: 0;
+  }
 }
 
-@media(min-width: 1200px){
-  .prm-fixed {
-    img{
-      width: auto;
-      margin-left: 15.3%;
-    }
-  }
-  .hero {
-    background-position: 29% !important;
-    overflow: visible !important;
-    .promo-content{
-      left: 20%;
-    }
-    svg {
-      position: absolute;
-      left: 36%;
-      top: 20%;
-      width: 440px;
-    }
-  }
-  .prm1{
+.show-sticky {
+  top: 4%;
+}
 
-    &__png{
-      width: 3%;
-    }
-    svg{
-      width: 540px;
-    }
-  }
-  .prm2{
-    &__png{
-      width: 3%;
-    }
-  }
+.de-pun {
+  display: none;
 }
-.ugc-denim{
-  height: 3.5%;
-  background-color: white;
+
+.region-DE .de-pun {
+  display: block;
 }
-.ugc-gallery{
-  background: white;
+
+.uk-ie-pun {
+  display: none;
 }
-footer, .ugc-gallery__container{
-  background-color: white;
+
+.region-UK .uk-ie-pun, .region-IE .uk-ie-pun {
+  display: block;
+}
+
+
+.region-DE .all-other-pun, 
+.region-UK .all-other-pun, 
+.region-IE .all-other-pun, 
+.region-NL .all-other-pun {
+  display: none;
+}
+
+
+
+.image-left {
+  background-position: 30.4% !important;
+}
+
+.image-right {
+  background-position: 69.5% !important;
+}
+
+.ugc-header__title {
+  text-align: center !important;
+}
+
+.price {
+  display: none;
+}
+
+.region-UK .price-uk {
+  display: inline-block;
+}
+
+.region-US .price-US,
+.region-AU .price-US {
+  display: inline-block;
+}
+
+.region-SE .price-se {
+  display: inline-block;
+}
+
+.region-NL .price-nl {
+  display: inline-block
+}
+
+.region-IE .price-eu,
+.region-EU .price-eu {
+  display: inline-block
+}
+
+.region-FR .price-de-fr,
+.region-DE .price-de-fr {
+  display: inline-block
+}
+
+.region-prices {
+  display: none;
+}
+
+.region-UK .price-UK {
+  display: inline;
+}
+
+.region-SE .price-KR {
+  display: inline;
+}
+
+.region-EU .price-EU,
+.region-IE .price-EU {
+  display: inline;
+}
+
+.region-NL .price-NL {
+  display: inline;
+}
+
+.region-DE .price-FR {
+  display: inline;
+}
+
+.region-FR .price-FR {
+  display: inline;
+}
+
+.region-AU .price-US,
+.region-US .price-US {
+  display: inline;
+}
+
+//ADDED FOR BARTS PREFRENCES ON NL TRANSLATIONS
+.region-EU .nl-pun,
+.region-SE .nl-pun,
+.region-IE .nl-pun,
+.region-FR .nl-pun,
+.region-DE .nl-pun,
+.region-AU .nl-pun,
+.region-US .nl-pun,
+.region-UK .nl-pun {
+  display: none;
+}
+
+.region-NL .eng-pun {
+  display: none;
 }
