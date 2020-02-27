@@ -1,4 +1,4 @@
-# content-build-tool-wp
+# Content build tool - Webpack
 Run 'npm install' to install everything to get it working
 
 # Development
@@ -9,7 +9,6 @@ Run 'npm run build' to produce the dist folder with all the files needed to copy
 
 # Production watch
 Run npm run watch - this does the same as "npm run build" but watches it so it updates all the time - will be slowe
-
 
 
 # Entry points
@@ -23,5 +22,6 @@ You can change the region inside - src/config/index.js - the target region class
 # Problems
 No Jquery yet
 Nested mixins in media queries causing problems
+Two Js errors which are always there but don't affect anything
 
 
