@@ -1,43 +1,43 @@
-/*# source 1 1 CSS\2019\price-points.css */
-.region-UK .promo-price {
+.pun {
+  display: none;
+}
+
+.pun p  {
+  padding-top: 5%;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin: 1% 0;
+}
+
+.region-UK .pun,
+.region-US .pun,
+.region-IE .pun,
+.region-AU .pun,
+.region-NL .pun,
+.region-EU .pun,
+.region-SE .pun {
   display: block;
 }
-.promo-price {
-  color: #000;
-  margin: 0;
-  line-height: 24px;
-  position: absolute;
-  right: 0.65em;
-  top: 0.65em;
-  font-weight: 500;
-  font-size: 20px;
+
+.nl-pun {
   display: none;
-  text-align: right;
-  z-index: 1;
 }
-.promo-price.promo-price__left {
-  right: auto;
-  left: 0.65em;
-  text-align: left;
+.region-NL .nl-pun {
+  display: block;
 }
-.promo-price.price__white {
-  color: #fff;
+.region-NL .eng-pun {
+  display: none;
 }
-@media (min-width: 701px) and (max-width: 1200px) {
-  .promo-price {
-    font-size: 1.8vw;
-  }
-}
-@media (max-width: 700px) {
-  .promo-price {
-    font-size: 15px;
-    line-height: 18px;
-  }
-  .promo-price {
-    right: 6%;
-    top: 2%;
-  }
-  .promo-price.promo-price__left {
-    left: 6%;
-  }
-}
+
+ /*incase of future text for FR* or DE/
+ 
+ /*.fr-pun {*/
+ /*  display: none;*/
+ /*}*/
+ /*.region-FR .fr-pun {*/
+ /*  display: block;*/
+ /*}*/
+ /*.region-FR .eng-pun {*/
+ /*  display: none;*/
+ /*}*/
