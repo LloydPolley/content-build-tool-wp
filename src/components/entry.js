@@ -14,6 +14,9 @@ import './landing-pages/puns/puns.scss';
 //CORE FOLDER
 import './core/contact-us.scss';
 
+//FONTS FOLDER
+import './fonts/playfair.scss';
+
 //UTIL FOLDER
 import './utils/ri-translations.scss';
 

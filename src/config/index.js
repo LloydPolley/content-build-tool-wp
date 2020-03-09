@@ -1,5 +1,5 @@
-import '../content.scss';
-import workspace from  '../workspace.html';
+import '../workspace/content.scss';
+import workspace from  '../workspace/workspace.html';
 import header from '../../external/html/header.html';
 import footer from '../../external/html/footer.html';
 
