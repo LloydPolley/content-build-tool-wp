@@ -33,5 +33,8 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@ri-digital/web-style-guide": "0.0.1"
   }
 }
