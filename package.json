@@ -5,8 +5,12 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
+    "men": "webpack-dev-server --config ./src/landing_pages/men/webpack/webpack.dev.js --open",
+    "women": "webpack-dev-server --config ./src/landing_pages/women/webpack/webpack.dev.js --open",
+    "girls": "webpack-dev-server --config ./src/landing_pages/girls/webpack/webpack.dev.js --open",
+    "boys": "webpack-dev-server --config ./src/landing_pages/boys/webpack/webpack.dev.js --open",
+    "playspace": "webpack-dev-server --config ./src/landing_pages/z-playspace/webpack/webpack.dev.js --open",
+    "buildmen": "webpack --config webpack.prod.js",
     "watch": "webpack --config webpack.prod.js --watch"
   },
   "keywords": [],
