@@ -3,8 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: "./src/config/index.js",
-    js: ['./src/workspace/script.js']
+    main: "./src/landing_pages/men/config/index.js",
+    js: ['./src/landing_pages/men/script.js']
   },
   module: {
     rules: [

@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = merge(common, {
   mode: "development",
    entry: {
-    cmsEntry: './src/components/entry.js',
+    cmsEntry: './src/landing_pages/men/config/entry.js',
   },
   module: {
     rules: [
