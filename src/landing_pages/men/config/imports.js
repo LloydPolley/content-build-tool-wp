@@ -29,4 +29,4 @@ import '../../../components/responsive/temp-core-fix.scss';
 //JS
 
 import '../../../components/landing-pages/sale-banner/saleBanner.js';
-import '../../../components/landing-pages/sale-banner/saleBannerInvoke';
+import '../../../components/landing-pages/sale-banner/saleBannerInvoke.js';

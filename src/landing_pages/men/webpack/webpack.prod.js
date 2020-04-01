@@ -1,14 +1,17 @@
 const path = require("path");
 const merge = require("webpack-merge");
-const common = require("./webpack.common");
+const common = require(path.resolve("./webpack/webpack.common"));
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = merge(common, {
   mode: "production",
+  entry: {
+    main: path.resolve(__dirname, "../config/index.js"),
+    js: path.resolve(__dirname, "../script.js")
+  },
   output: {
     filename: "[name].[contentHash].bundle.js",
     path: path.resolve(__dirname, "../dist")

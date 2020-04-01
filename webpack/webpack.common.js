@@ -1,17 +1,23 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+  console.log(path.resolve(__dirname))
+
+
 
 module.exports = {
-  entry: {
-    main: "./src/landing_pages/men/config/index.js",
-    js: ['./src/landing_pages/men/script.js']
-  },
   module: {
     rules: [
       {
         test: /\.html$/i,
         loader: "html-loader"
-      },
+      }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
+  ]
 };
