@@ -1,5 +1,165 @@
 @import "../../config/config.scss";
+// @import "config";
 
-h1{
-  color: blue;
+// *** GENERAL ***
+// Variables
+$flushVariable: "flush3";
+
+// STYLES
+// kill padding on mobile:
+@media (max-width: 700px) {
+  .content-wrap {
+    padding: 0;
+  }
+}
+// #outer-container {
+//   overflow: unset;
+// }
+// #inner-container {
+//   overflow: unset;
+// }
+
+// *** MOBILE ***
+// ASSETS
+@include mobile(
+  $name: "hero-mob",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20190217-wwlp-hero-OCCASION-mob_DNT",
+  $flush: $flushVariable
+);
+@include mobile(
+  $name: "prm1-mob",
+  $marginBottom: 2%,
+  $flush: $flushVariable,
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200317-wwlp-promo1-dresses-mob_DNT"
+);
+@include mobile(
+  $name: "prm2-mob",
+  $marginBottom: 2%,
+  $flush: $flushVariable,
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200317-wwlp-promo2-shoes-mob_DNT"
+);
+@include mobile(
+  $name: "hero2-mob",
+  $marginBottom: 2%,
+  $flush: $flushVariable,
+  $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200306-wk10-wlp-promo3-bags-mobs_DNT'
+);
+
+.hero-mob {
+  h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 13vw;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
+
+.cta-wrap-mob {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 1em;
+
+  .dark-rounded-cta {
+    // width: 40%;
+    margin: 2% auto;
+  }
+
+  a {
+    margin-bottom: 1.5em;
+  }
+}
+.title-mob {
+  width: 100%;
+  text-align: center;
+  font-size: 10vw;
+  margin: 0.5em 0;
+}
+
+// DESKTOP
+@include image(
+  $name: "hero",
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20190213-wwlp-hero-OCCASION_DNT",
+  $flush: $flushVariable
+);
+
+
+@include image(
+  $name: "box-1",
+  $flush: $flushVariable,
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200317-wwlp-promo1-dresses_DNT"
+);
+
+@include image(
+  $name: "box-3",
+  $flush: $flushVariable,
+  $url:
+    "https://images.riverisland.com/is/image/RiverIsland/c20200317-wwlp-promo2-shoes_DNT"
+);
+
+@include image(
+  $name: "prm3",
+  $flush: $flushVariable,
+  $url: 'https://images.riverisland.com/is/image/RiverIsland/c20200304-wwlp-hero2-mothers-day_DNT'
+);
+
+@media (min-width: 701px) {
+  .promo-content {
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.hero {
+  .promo-content {
+    left: 53%;
+    width: 20%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    pointer-events: none;
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 0.4em;
+      font-size: 7.6vw;
+      font-weight: 400;
+    }
+    a {
+      margin-bottom: 2em;
+      margin-right: 2.5%;
+      pointer-events: all;
+
+    }
+  }
+}
+
+.only-nl{
+  display: none !important;
+}
+.only-nl-inline{
+  display: none !important;
+}
+.region-NL {
+  .not-nl {
+    display: none !important;
+  }
+  .only-nl{
+    display: block !important;
+  }
+  .only-nl-inline{
+    display: inline-block !important;
+  }
 }
